@@ -9,7 +9,8 @@ Cloud 환경의 자동화 취약점 진단 툴 개발
     
     -> Linux Shell Script
   > API
-    --> Python
+  
+    -> Python
 - AMI진단
 
 - 침투테스트
