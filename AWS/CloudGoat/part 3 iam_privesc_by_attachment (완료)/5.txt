@@ -1,0 +1,92 @@
+root@kali:~/cloudgoat# aws iam list-instance-profiles --profile Kerrigan
+{
+    "InstanceProfiles": [
+        {
+            "Path": "/",
+            "InstanceProfileName": "cg-ec2-instance-profile-cgid6ba4gbj74a",
+            "InstanceProfileId": "AIPAX2DLG7XRRUPERZEUD",
+            "Arn": "arn:aws:iam::537095765475:instance-profile/cg-ec2-instance-profile-cgid6ba4gbj74a",
+            "CreateDate": "2020-02-06T07:55:51Z",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "cg-ec2-role-cgid6ba4gbj74a",
+                    "RoleId": "AROAX2DLG7XR3AIXD23UH",
+                    "Arn": "arn:aws:iam::537095765475:role/cg-ec2-role-cgid6ba4gbj74a",
+                    "CreateDate": "2020-02-06T07:55:50Z",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Sid": "",
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "cg-ec2-instance-profile-cgidweubdyvx8i",
+            "InstanceProfileId": "AIPAX2DLG7XRYCICMIBIA",
+            "Arn": "arn:aws:iam::537095765475:instance-profile/cg-ec2-instance-profile-cgidweubdyvx8i",
+            "CreateDate": "2020-02-11T12:28:16Z",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "cg-banking-WAF-Role-cgidweubdyvx8i",
+                    "RoleId": "AROAX2DLG7XRQGZ6LH7ZU",
+                    "Arn": "arn:aws:iam::537095765475:role/cg-banking-WAF-Role-cgidweubdyvx8i",
+                    "CreateDate": "2020-02-11T12:28:14Z",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Sid": "",
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "Path": "/",
+            "InstanceProfileName": "cg-ec2-meek-instance-profile-cgid4he2dx6ly1",
+            "InstanceProfileId": "AIPAX2DLG7XR7CCUH7LXI",
+            "Arn": "arn:aws:iam::537095765475:instance-profile/cg-ec2-meek-instance-profile-cgid4he2dx6ly1",
+            "CreateDate": "2020-02-12T06:23:04Z",
+            "Roles": [
+                {
+                    "Path": "/",
+                    "RoleName": "cg-ec2-meek-role-cgid4he2dx6ly1",
+                    "RoleId": "AROAX2DLG7XRYDHJA4M5N",
+                    "Arn": "arn:aws:iam::537095765475:role/cg-ec2-meek-role-cgid4he2dx6ly1",
+                    "CreateDate": "2020-02-12T06:23:02Z",
+                    "AssumeRolePolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [
+                            {
+                                "Effect": "Allow",
+                                "Principal": {
+                                    "Service": "ec2.amazonaws.com"
+                                },
+                                "Action": "sts:AssumeRole"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
+

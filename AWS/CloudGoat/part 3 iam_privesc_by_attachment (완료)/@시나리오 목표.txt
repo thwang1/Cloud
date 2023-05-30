@@ -1,0 +1,3 @@
+EC2 인스턴스 "cg-super-critical-security-server" 삭제하기
+
+

@@ -1,0 +1,450 @@
+root@kali:~/cloudgoat# aws ec2 describe-security-groups --profile Kerrigan
+{
+    "SecurityGroups": [
+        {
+            "Description": "CloudGoat cgid6ba4gbj74a Security Group for EC2 Instance over SSH",
+            "GroupName": "cg-ec2-ssh-cgid6ba4gbj74a",
+            "IpPermissions": [
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.211.88.240/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-00ab70fe428658c6d",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Scenario",
+                    "Value": "ec2-ssrf"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "cg-ec2-ssh-cgid6ba4gbj74a"
+                }
+            ],
+            "VpcId": "vpc-0c28a6311c11757ba"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-013bcfce5ce8a8670",
+                            "UserId": "537095765475"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-013bcfce5ce8a8670",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0097310c5eb6234ad"
+        },
+        {
+            "Description": "CloudGoat cgid6ba4gbj74a Security Group for EC2 Instance over HTTP",
+            "GroupName": "cg-ec2-http-cgid6ba4gbj74a",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.211.88.240/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-02efdc0b2ef8f8768",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "cg-ec2-http-cgid6ba4gbj74a"
+                },
+                {
+                    "Key": "Scenario",
+                    "Value": "ec2-ssrf"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                }
+            ],
+            "VpcId": "vpc-0c28a6311c11757ba"
+        },
+        {
+            "Description": "CloudGoat cgid4he2dx6ly1 Security Group for EC2 Instance over SSH",
+            "GroupName": "cg-ec2-ssh-cgid4he2dx6ly1",
+            "IpPermissions": [
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.211.88.240/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-07410956c257ce08a",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Scenario",
+                    "Value": "iam-privesc-by-attachment"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "cg-ec2-ssh-cgid4he2dx6ly1"
+                }
+            ],
+            "VpcId": "vpc-08a002a01ea06e879"
+        },
+        {
+            "Description": "CloudGoat cgidweubdyvx8i Security Group for EC2 Instance over HTTP",
+            "GroupName": "cg-ec2-http-cgidweubdyvx8i",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.211.88.240/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-086ed1aac3ba9930d",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "cg-ec2-http-cgidweubdyvx8i"
+                },
+                {
+                    "Key": "Scenario",
+                    "Value": "cloud-breach-s3"
+                }
+            ],
+            "VpcId": "vpc-0097310c5eb6234ad"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-087a283cf825d24d4",
+                            "UserId": "537095765475"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-087a283cf825d24d4",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-0c28a6311c11757ba"
+        },
+        {
+            "Description": "CloudGoat cgid4he2dx6ly1 Security Group for EC2 Instance over HTTP",
+            "GroupName": "cg-ec2-http-cgid4he2dx6ly1",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.211.88.240/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.211.88.240/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-09bd44681b183f9bb",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Scenario",
+                    "Value": "iam-privesc-by-attachment"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "cg-ec2-http-cgid4he2dx6ly1"
+                }
+            ],
+            "VpcId": "vpc-08a002a01ea06e879"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0ada50a5e063eb711",
+                            "UserId": "537095765475"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-0ada50a5e063eb711",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-08a002a01ea06e879"
+        },
+        {
+            "Description": "CloudGoat cgidweubdyvx8i Security Group for EC2 Instance over SSH",
+            "GroupName": "cg-ec2-ssh-cgidweubdyvx8i",
+            "IpPermissions": [
+                {
+                    "FromPort": 22,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.211.88.240/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 22,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-0f92db32bd913b01c",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "cg-ec2-ssh-cgidweubdyvx8i"
+                },
+                {
+                    "Key": "Scenario",
+                    "Value": "cloud-breach-s3"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                }
+            ],
+            "VpcId": "vpc-0097310c5eb6234ad"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-d0a6f2f8",
+                            "UserId": "537095765475"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "537095765475",
+            "GroupId": "sg-d0a6f2f8",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "VpcId": "vpc-6f8da515"
+        }
+    ]
+}
+
+

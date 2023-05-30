@@ -1,0 +1,242 @@
+root@kali:~/cloudgoat# aws ec2 describe-subnets --profile Kerrigan
+{
+    "Subnets": [
+        {
+            "AvailabilityZone": "us-east-1b",
+            "AvailabilityZoneId": "use1-az2",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.10.20.0/24",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0231a1707d96cae6a",
+            "VpcId": "vpc-0c28a6311c11757ba",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Scenario",
+                    "Value": "ec2-ssrf"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "CloudGoat cgid6ba4gbj74a Public Subnet #2"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-0231a1707d96cae6a"
+        },
+        {
+            "AvailabilityZone": "us-east-1d",
+            "AvailabilityZoneId": "use1-az6",
+            "AvailableIpAddressCount": 4091,
+            "CidrBlock": "172.31.32.0/20",
+            "DefaultForAz": true,
+            "MapPublicIpOnLaunch": true,
+            "State": "available",
+            "SubnetId": "subnet-333c246f",
+            "VpcId": "vpc-6f8da515",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-333c246f"
+        },
+        {
+            "AvailabilityZone": "us-east-1b",
+            "AvailabilityZoneId": "use1-az2",
+            "AvailableIpAddressCount": 4091,
+            "CidrBlock": "172.31.80.0/20",
+            "DefaultForAz": true,
+            "MapPublicIpOnLaunch": true,
+            "State": "available",
+            "SubnetId": "subnet-f5d5cfdb",
+            "VpcId": "vpc-6f8da515",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-f5d5cfdb"
+        },
+        {
+            "AvailabilityZone": "us-east-1c",
+            "AvailabilityZoneId": "use1-az4",
+            "AvailableIpAddressCount": 4091,
+            "CidrBlock": "172.31.16.0/20",
+            "DefaultForAz": true,
+            "MapPublicIpOnLaunch": true,
+            "State": "available",
+            "SubnetId": "subnet-5b832c16",
+            "VpcId": "vpc-6f8da515",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-5b832c16"
+        },
+        {
+            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZoneId": "use1-az1",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.10.10.0/24",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-03a1cce2111dc362f",
+            "VpcId": "vpc-0c28a6311c11757ba",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "CloudGoat cgid6ba4gbj74a Public Subnet #1"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Scenario",
+                    "Value": "ec2-ssrf"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-03a1cce2111dc362f"
+        },
+        {
+            "AvailabilityZone": "us-east-1b",
+            "AvailabilityZoneId": "use1-az2",
+            "AvailableIpAddressCount": 251,
+            "CidrBlock": "10.10.20.0/24",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-032102fad6f729226",
+            "VpcId": "vpc-0097310c5eb6234ad",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Scenario",
+                    "Value": "cloud-breach-s3"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "CloudGoat cgidweubdyvx8i Public Subnet #2"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-032102fad6f729226"
+        },
+        {
+            "AvailabilityZone": "us-east-1e",
+            "AvailabilityZoneId": "use1-az3",
+            "AvailableIpAddressCount": 4091,
+            "CidrBlock": "172.31.48.0/20",
+            "DefaultForAz": true,
+            "MapPublicIpOnLaunch": true,
+            "State": "available",
+            "SubnetId": "subnet-8cfad9b2",
+            "VpcId": "vpc-6f8da515",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-8cfad9b2"
+        },
+        {
+            "AvailabilityZone": "us-east-1f",
+            "AvailabilityZoneId": "use1-az5",
+            "AvailableIpAddressCount": 4091,
+            "CidrBlock": "172.31.64.0/20",
+            "DefaultForAz": true,
+            "MapPublicIpOnLaunch": true,
+            "State": "available",
+            "SubnetId": "subnet-a6a574a8",
+            "VpcId": "vpc-6f8da515",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-a6a574a8"
+        },
+        {
+            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZoneId": "use1-az1",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.10.10.0/24",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": false,
+            "State": "available",
+            "SubnetId": "subnet-0993cdbd8e7426f93",
+            "VpcId": "vpc-0097310c5eb6234ad",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Scenario",
+                    "Value": "cloud-breach-s3"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "CloudGoat cgidweubdyvx8i Public Subnet #1"
+                },
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-0993cdbd8e7426f93"
+        },
+        {
+            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZoneId": "use1-az1",
+            "AvailableIpAddressCount": 250,
+            "CidrBlock": "10.0.10.0/24",
+            "DefaultForAz": false,
+            "MapPublicIpOnLaunch": true,
+            "State": "available",
+            "SubnetId": "subnet-08df94bd5805efeb3",
+            "VpcId": "vpc-08a002a01ea06e879",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "Tags": [
+                {
+                    "Key": "Stack",
+                    "Value": "CloudGoat"
+                },
+                {
+                    "Key": "Scenario",
+                    "Value": "iam-privesc-by-attachment"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "CloudGoat cgid4he2dx6ly1 Public Subnet"
+                }
+            ],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-08df94bd5805efeb3"
+        },
+        {
+            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZoneId": "use1-az1",
+            "AvailableIpAddressCount": 4091,
+            "CidrBlock": "172.31.0.0/20",
+            "DefaultForAz": true,
+            "MapPublicIpOnLaunch": true,
+            "State": "available",
+            "SubnetId": "subnet-6facb008",
+            "VpcId": "vpc-6f8da515",
+            "OwnerId": "537095765475",
+            "AssignIpv6AddressOnCreation": false,
+            "Ipv6CidrBlockAssociationSet": [],
+            "SubnetArn": "arn:aws:ec2:us-east-1:537095765475:subnet/subnet-6facb008"
+        }
+    ]
+}
+
+

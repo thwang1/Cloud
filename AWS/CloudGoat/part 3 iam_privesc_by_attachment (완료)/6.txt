@@ -1,0 +1,150 @@
+root@kali:~/cloudgoat# aws iam list-roles --profile Kerrigan
+{
+    "Roles": [
+        {
+            "Path": "/aws-service-role/support.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForSupport",
+            "RoleId": "AROAX2DLG7XRVKIILAI3H",
+            "Arn": "arn:aws:iam::537095765475:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport",
+            "CreateDate": "2020-02-04T03:01:26Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "support.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "Enables resource access for AWS to provide billing, administrative and support services",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/aws-service-role/trustedadvisor.amazonaws.com/",
+            "RoleName": "AWSServiceRoleForTrustedAdvisor",
+            "RoleId": "AROAX2DLG7XRSG5AUGSXY",
+            "Arn": "arn:aws:iam::537095765475:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor",
+            "CreateDate": "2020-02-04T03:01:26Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "trustedadvisor.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "Description": "Access for the AWS Trusted Advisor Service to help reduce cost, increase performance, and improve security of your AWS environment.",
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cg-banking-WAF-Role-cgidweubdyvx8i",
+            "RoleId": "AROAX2DLG7XRQGZ6LH7ZU",
+            "Arn": "arn:aws:iam::537095765475:role/cg-banking-WAF-Role-cgidweubdyvx8i",
+            "CreateDate": "2020-02-11T12:28:14Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cg-ec2-meek-role-cgid4he2dx6ly1",
+            "RoleId": "AROAX2DLG7XRYDHJA4M5N",
+            "Arn": "arn:aws:iam::537095765475:role/cg-ec2-meek-role-cgid4he2dx6ly1",
+            "CreateDate": "2020-02-12T06:23:02Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cg-ec2-mighty-role-cgid4he2dx6ly1",
+            "RoleId": "AROAX2DLG7XRWHARDD6W3",
+            "Arn": "arn:aws:iam::537095765475:role/cg-ec2-mighty-role-cgid4he2dx6ly1",
+            "CreateDate": "2020-02-12T06:23:02Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cg-ec2-role-cgid6ba4gbj74a",
+            "RoleId": "AROAX2DLG7XR3AIXD23UH",
+            "Arn": "arn:aws:iam::537095765475:role/cg-ec2-role-cgid6ba4gbj74a",
+            "CreateDate": "2020-02-06T07:55:50Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cg-lambda-role-cgid6ba4gbj74a-service-role",
+            "RoleId": "AROAX2DLG7XRXHA5DJRH2",
+            "Arn": "arn:aws:iam::537095765475:role/cg-lambda-role-cgid6ba4gbj74a-service-role",
+            "CreateDate": "2020-02-06T07:55:50Z",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        }
+    ]
+}
